@@ -1,0 +1,10 @@
+{
+  "name": "com.github.wintbiit.epic-online-service-transport",
+  "displayName": "Epic Online Service Transport",
+  "version": "1.0.0",
+  "unity": "2018.4",
+  "description": "Epic Online Service P2P Transport for Unity. See https://github.com/wintbiit/EpicOnlineServiceTransport",
+  "license": "MIT",
+  "keywords": [ "Networking", "Utils", "Mirror", "P2P" ],
+  "dependencies": {}
+}
