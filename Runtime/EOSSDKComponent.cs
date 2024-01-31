@@ -42,6 +42,9 @@ namespace EpicOnlineServiceTransport {
         [Header("Misc")]
         public LogLevel epicLoggerLevel = LogLevel.Error;
 
+        [Header("Epic SDK")]
+        public string libraryPath = "Assets/Mirror/Runtime/Runtime/EpicOnlineTransport/EOSSDK/" + Config.LibraryName;
+
         [SerializeField] private bool collectPlayerMetrics = true;
         public static bool CollectPlayerMetrics {
             get {
@@ -170,8 +173,6 @@ namespace EpicOnlineServiceTransport {
             instance = this;
 
 #if UNITY_EDITOR
-            var libraryPath = "Assets/Mirror/Runtime/Runtime/EpicOnlineTransport/EOSSDK/" + Config.LibraryName;
-
             libraryPointer = LoadLibrary(libraryPath);
             if (libraryPointer == IntPtr.Zero) {
                 throw new Exception("Failed to load library" + libraryPath);

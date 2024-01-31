@@ -2,8 +2,8 @@
     "name": "EpicOnlineServiceTransport",
     "rootNamespace": "",
     "references": [
-        "GUID:30817c1a0e6d646d99c048fc403f5979",
-        "GUID:1b62e475927be8c458bb99930c318941"
+        "Mirror",
+        "EOS_SDK"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
